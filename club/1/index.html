@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="pic/logo.png" type="image/icon type">
+  <title>Technical club</title>
+  <meta name="description" content="Technical club .........">
+  <meta name="keywords" content="RKNEC, RCOEM, Technical club">
+  <script src="pace.js"></script>
+</head>
+
+
+<body>
+
+<!-- header  starts -->
+
+
+<div class="boxProp textProp">
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="pa.html"text-align: left>bla</a>
+  <a href="pa.html"text-align: left>bla </a>
+  <a href="pa.html"text-align: left>bla </a>
+  <a href="pa.html"text-align: left>bla </a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+ <a href="pa.html"style=" text-decoration: none;" ><span style=" color: white; ">Technical</span><span style=" color: black; "> Club</span></a>
+ <a href="pa.html"><img src="pic/login.png" id="login" title="Login to Members and admin Page"></a>
+ <div class="progress-container">
+    <div class="progress-bar" id="myBar">
+    </div>
+  </div>
+</div>
+
+<script>
+
+  // When the user scrolls the page, execute myFunction 
+  window.onscroll = function() {myFunction()};
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+</script>
+
+<!-- header  ends -->
+
+
+ <!-- main  starts -->
+<section id="welcome-section" class="welcome-section">
+
+  <!--<h1 style=" color: white; " >Clubs </h1>
+  <p style=" color: white; " >.....</p>--> 
+
+  <div class="wc1" id="wc1" style="margin-right: 10%;">
+   <a href="pa.html"style="margin-bottom: 7% "><img src="pic/code.png" id="zio" alt="the code breakers" height="126" width="126" ></a><a href="pa.html" style=" color: white; margin-bottom: 50%;text-decoration: none; " id="zio">The Code Breakers</a>
+
+
+   <a href="pa.html" style="margin-bottom: 7% "> <img src="pic/embedded.png" id="zio" alt="embedded" height="126" width="126"></a><a href="pa.html"id="zio" style=" color: white; text-decoration: none;">&#160&#160&#160&#160Embedded Club</a>
+  </div>
+  <div class="wc1" id="wc1" style="margin-right: 10%;">
+    <a href="pa.html" style="margin-bottom: 7% "><img src="pic/flying.png" id="zio" alt="flying club" height="126" width="126" >
+    </a><a href="pa.html" style=" color: white; margin-bottom: 100%;text-decoration: none; " id="zio"> &#160&#160&#160&#160&#160&#160&#160Flying club</a>
+
+    <span style=" color: white;margin-bottom: 100%; font-size:250% " id="zio">&#160&#160Clubs</span>
+
+
+    <a href="pa.html"style="margin-bottom: 7% "><img src="pic/ishrae.png" id="zio" alt="ishrae" height="126" width="126"></a><a href="pa.html" id="zio" style=" color: white; text-decoration: none;">&#160&#160&#160&#160&#160&#160&#160&#160&#160ISHRAE</a>
+  </div>
+  <div class="wc1" id="wc1">
+    <a href="pa.html"style="margin-bottom: 7% "><img src="pic/rc.png" id="zio" alt="rc" height="126" width="126" ></a><a href="pa.html"style=" color: white; margin-bottom: 50%;text-decoration: none; " id="zio"> &#160&#160&#160&#160&#160Robotics Club</a>
+
+
+    <a href="pa.html"style="margin-bottom: 7% "><img src="pic/trident.png" id="zio" alt="trident racing" height="126" width="126"></a><a href="pa.html"id="zio" style=" color: white; text-decoration: none;">Trident Racing E-baja</a>
+  </div>
+
+</section>
+<!-- main  ends -->
+
+<!-- slideshow  starts -->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="pic/1.jpg" style="width:100%">
+  <div class="text">Bla </div> 
+</div>
+
+<div class="mySlides fade">
+  <img src="pic/2.jpg" style="width:100%">
+  <div class="text">Bla Bla </div> 
+</div>
+
+<div class="mySlides fade">
+  <img src="pic/3.jpg" style="width:100%">
+  <div class="text">Bla Bla Bla</div>
+</div>
+</div>
+
+  <script >
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+    
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length)
+      {slideIndex = 1}    
+      
+
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 1000); // Change image every 1 seconds
+    }
+  </script>
+
+<!-- slideshow  ends -->
+
+<!-- project starts -->
+<section id="projects" class="projects-section">
+  <h2 class="projects-section-header"
+  style="font-size: 45px">These are some of my projects</h2>
+
+  <div class="projects-grid">
+    <a
+      href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+      target="_blank"
+      class="project project-tile"
+      style=" text-decoration: none; color: white; box-shadow: 5px 3px 5px black;"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg"
+        alt="project"
+      />
+      <p class="project-title">
+        Tribute Page
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
+      target="_blank"
+      class="project project-tile"
+      style=" text-decoration: none; color: white; box-shadow: 5px 3px 5px black;"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png"
+        alt="project"
+      />
+      <p class="project-title">
+        Random Quote Machine
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/freeCodeCamp/full/wgGVVX"
+      target="_blank"
+      class="project project-tile"
+      style=" text-decoration: none; color: white; box-shadow: 5px 3px 5px black;"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
+        alt="project"
+      />
+      <p class="project-title">
+        JavaScript Calculator
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/freeCodeCamp/full/mVEJag"
+      target="_blank"
+      class="project project-tile"
+      style=" text-decoration: none; color: white; box-shadow: 5px 3px 5px black;"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg"
+        alt="project"
+      />
+      <p class="project-title">
+        Map Data Across the Globe
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/freeCodeCamp/full/wGqEga"
+      target="_blank"
+      class="project project-tile"
+      style=" text-decoration: none; color: white; box-shadow: 5px 3px 5px black;"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
+        alt="project"
+      />
+      <p class="project-title">
+        Wikipedia Viewer
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/freeCodeCamp/full/KzXQgy"
+      target="_blank"
+      class="project project-tile"
+      style=" text-decoration: none; color: white; box-shadow: 5px 3px 5px black;"
+    >
+      <img
+        class="project-image"
+        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png"
+        alt="project"
+      />
+      <p class="project-title">
+        Tic Tac Toe Game
+      </p>
+    </a>
+  </div>
+
+  <a
+    href="https://codepen.io/FreeCodeCamp/"
+    class="btn btn-show-all"
+    target="_blank"
+    style=" text-decoration: none; color: white; box-shadow: 5px 3px 5px black;"
+    >Show all<i class="fas fa-chevron-right"></i
+  ></a>
+</section>
+
+<!-- project ends -->
+
+<!-- events starts -->
+<span id="Events-heading">&#160&#160&#160&#160Events</span>
+<div class="container">
+  
+  <div class="card-media">
+    <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);"></div>   
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">Mon, APR 09, 7:00 PM</span>
+      </div>
+      <span class="card-media-body-heading">Pratishruti</span>
+      <div class="card-media-body-supporting-bottom">
+        <span class="card-media-body-supporting-bottom-text subtle">Rcoem,Nagpur</span>
+      </div>
+      <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">
+        <span class="card-media-body-supporting-bottom-text subtle">#Tech #Rknec</span>
+        <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">MORE </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card-media">
+    <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);"></div>   
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">Mon, APR 09, 7:00 PM</span>
+      </div>
+      <span class="card-media-body-heading">Pratishruti</span>
+      <div class="card-media-body-supporting-bottom">
+        <span class="card-media-body-supporting-bottom-text subtle">Rcoem,Nagpur</span>
+      </div>
+      <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">
+        <span class="card-media-body-supporting-bottom-text subtle">#Tech #Rknec</span>
+        <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">MORE </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-media">
+    <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);"></div>   
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">Mon, APR 09, 7:00 PM</span>
+      </div>
+      <span class="card-media-body-heading">Pratishruti</span>
+      <div class="card-media-body-supporting-bottom">
+        <span class="card-media-body-supporting-bottom-text subtle">Rcoem,Nagpur</span>
+      </div>
+      <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">
+        <span class="card-media-body-supporting-bottom-text subtle">#Tech #Rknec</span>
+        <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">MORE </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-media">
+    <!-- media container -->
+    <div class="card-media-object-container">
+      <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);"></div>   
+    </div>
+    <!-- body container -->
+    <div class="card-media-body">
+      <div class="card-media-body-top">
+        <span class="subtle">Mon, APR 09, 7:00 PM</span>
+      </div>
+      <span class="card-media-body-heading">Pratishruti</span>
+      <div class="card-media-body-supporting-bottom">
+        <span class="card-media-body-supporting-bottom-text subtle">Rcoem,Nagpur</span>
+      </div>
+      <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">
+        <span class="card-media-body-supporting-bottom-text subtle">#Tech #Rknec</span>
+        <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">MORE </a>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</div>
+
+<!-- events ends -->
+
+<!-- contact starts -->
+
+<section id="contact" class="contact-section">
+  <div class="contact-section-header">
+    <h2>Let's work together...</h2>
+  </div>
+  <div class="contact-links">
+    <a
+      href="https://facebook.com"
+      class="btn contact-details"
+      style=" text-decoration: none; color: white;"
+      ><img src="pic/facebook.png"> Facebook</a
+    >
+    <a
+      id="profile-link"
+      href="https://github.com"
+      class="btn contact-details"
+      style=" text-decoration: none; color: white;"
+      ><img src="pic/github.png"> GitHub</a
+    >
+    <a
+      href="https://twitter.com"
+      class="btn contact-details"
+      style=" text-decoration: none; color: white;"
+      ><img src="pic/twitter.png"> Twitter</a
+    >
+    <a href="mailto:chawda@rknec.com" 
+       class="btn contact-details"
+       style=" text-decoration: none; color: white;"
+      ><img src="pic/email.png"> Send a mail</a
+    >
+    <a href="tel:9669112222" 
+       class="btn contact-details" 
+       style=" text-decoration: none; color: white;"
+      ><img src="pic/call.png"> Call me</a
+    >
+  </div>
+</section>
+
+<!--  contact ends -->
+
+
+</html>
